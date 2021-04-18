@@ -39,7 +39,7 @@ module.exports = {
       console.log("No change")
       return "No change"
     }
-    const allowed = ["domain", "host", "ttl", "prio", "type", "rdata", "geozone_id"]
+    const allowed = ["domain", "host", "ttl", "prio", "type", "geozone_id"]
     const new_record = Object.keys(record)
       .filter(key => allowed.includes(key))
       .reduce((obj, key) => {
